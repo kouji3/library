@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Library</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+
+    </head>
+    <body>
+        <div class="quote">
+            <h2><em>A library is not a luxury but one of the necessities of life.</em></h2>
+            <h3>- Henry Ward Beecher</h3>
+        </div>
+
+        <div class="books">
+            <button type="button">+ Add Book</button>
+
+            <div class="book-cards">
+                <div class="book">
+                    <h2 class="title"></h2>
+                    <h2 class="pages"></h2>
+                    <h2 class="author"></h2>
+                    <h2 class="isRead"></h2>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <form class="card-info">
+            <div class="book-title">
+                <input type="text" minlength="4" maxlength="120" placeholder="Book Title" required>
+            </div>
+            <div class="book-author">
+                <input type="text" minlength="4" maxlength="120" placeholder="Book Author" required>
+            </div>
+            <div class="book-pages">
+                <input type="number" min="20" max="15000" placeholder="Book Pages Number" required>
+            </div>
+            <div class="isBookRead">
+                <button type="button" id="read">Read</button>
+                <button type="button" id="not-read">Not Read</button>
+            </div>
+            <div class="add">
+                <button type="button">+</button>
+            </div>
+        </form>
+    </body>
+</html>
