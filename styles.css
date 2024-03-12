@@ -94,9 +94,27 @@ body, html {
     transition: background-color 0.3s ease;
 }
 
+.isReadX {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84%;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgba(11, 255, 11, 0.432);
+    height: 55px;
+    transition: background-color 0.3s ease;
+}
+
+.isReadX:hover {
+    background-color: rgba(11, 255, 11, 0.520);
+}
+
 .isRead:hover {
     background-color: rgba(255, 0, 0, 0.342);
 }
+
+
 
 .overlay {
     width: 100vw;
@@ -226,6 +244,49 @@ body, html {
 .add > button:hover {
     background-color: white;
 }
+
+
+
+.error-box {
+    width: fit-content;
+    height: 70px;
+    border-radius: 5px;
+    position: absolute;
+    top: -7%;
+    left: 50%;
+    visibility: hidden;
+    opacity: 0;
+    color: yellow;
+    font-size: clamp(4px, 4% + 1rem, 20px);
+    font-family: sans-serif;
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 0.4s ease;
+    background-color: rgb(3, 0, 22);
+    transform: translate(-50%, -50%);
+}
+
+.error-box.show {
+    opacity: 1;
+    visibility: visible;
+    top: 7%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 456px) {
     .card-info {
